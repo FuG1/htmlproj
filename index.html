@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+<header>
+    <img src="img/photo_2024-09-05_15-26-13.jpg" alt="Logo">
+    <div class="group-info">
+        <p>Группа Эфбо-08-23</p>
+        <p>Афонин Егор Михайлович</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="second_pe.html">Первый семестр</a>
+    <a href="#">Второй семестр</a>
+    <a href="buy_page.html">Услуги</a>
+    <a href="#">Авторизация</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Навигация по странице</h3>
+        <ul>
+            <li><a href="#frontend">Фронтенд</a></li>
+            <li><a href="#backend">Бэкенд</a></li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <h1>Добро пожаловать на мой сайт</h1>
+        <p>Меня зовут Афонин Егор Михайлович и я начинающий специалист по веб-разработке.</p>
+        
+        <div class="responsive-embed">
+            <img src="img/photo_2024-09-05_15-26-13.jpg" alt="Profile Picture">
+        </div>
+
+        <div id="frontend">
+            <h2>Фронтенд</h2>
+        </div>
+        <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.</p>
+        
+        <div class="responsive-embed">
+            <video controls>
+                <source src="frontend_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        
+        <div id="backend">
+            <h2>Бэкенд</h2>
+        </div>
+        <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.</p>
+        
+        <div class="responsive-embed">
+            <video controls>
+                <source src="frontend_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+
+    </section>
+</div>
+
+<footer>
+    &copy; Афонин Егор Михайлович, 2024
+</footer>
+
+<script src="script.js"></script> <!-- Второе подключение перед </body> -->
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+header .group-info p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.sidebar h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50;
+}
+
+.content {
+    flex: 3;
+    min-width: 300px;
+}
+
+.content h1 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    margin-bottom: 20px;
+}
+
+.responsive-embed img,
+.responsive-embed video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+video {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .sidebar {
+        margin-right: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.8em;
+    }
+
+    .content h2 {
+        font-size: 1.6em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .sidebar h3 {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 1.4em;
+    }
+
+    .content p {
+        font-size: 0.95em;
+    }
+
+    .responsive-embed {
+        padding-bottom: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header .group-info p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 8px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.3em;
+    }
+
+    .content h2 {
+        font-size: 1.2em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .responsive-embed {
+        padding-bottom: 56.25%;
+    }
+}
